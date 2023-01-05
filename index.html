@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribal-gateway</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n"
+    crossorigin="anonymous"
+  />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="index.css">
+ 
+</head>
+<body>
+    <main>
+<nav id="navbar" class="navbar navbar-expand-lg sticky-top py-4 shadow-sm shadow-dark " style="z-index: 10;">
+        <div class="container pt-2 pb-2 d-lg-flex flex-lg-column">
+            <!-- <h1><a class="f-1" href="" style="color: rgb(252, 255, 51); padding-top: 20px; text-decoration: none;" class="hidden">Tribal gateway</a>
+            </h1> -->
+            <img src="./assets/images/logo.jpg" alt="" style="width: 30%;">
+            <button
+            id="navbar-toggler-btn"
+            class="btn border navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-items"
+            aria-controls="navbarNav"
+          >
+            <span class="bi-list fs-1 text-light"></span>
+          </button>
+            <div id="navbar-items" class="collapse navbar-collapse">
+                <ul class="navbar-nav fs-5 flex-wrap justify-content-lg-center align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="">Events</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="">Help</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <h3 class="h3 text-center py-5">Welcome to Nigeria</h3>
+<div class="container d-lg-flex mb-5">
+    <div id="first">
+<p class=" fw-light">The region's newest and most elaborate Family Recreational and Educationl Center , the Omu Resorst is home to Zoo; Freshwater seaworld; Wax museum; Amusement Rides; Go Karting; Quad biking and more</p>
+<p class="fw-bold">Omu Resort packages Includes</p>
+<ul>
+    <li>Entry to all avalaible attractions</li>
+    <li>Light picnic Lunch</li>
+    <li>Photo</li>
+    <li>Souvenir gift</li>
+    <li>$100pp with transportation</li>
+    <li>$75pp without transportation</li>
+</ul>
+
+<img src="./assets/images/TRIBAL D.png" alt="" class="w-100 pb-5">
+    </div>
+    <div class="form w-100 mb-5 shadow   p-5" id="form">
+        <p>please fill out the form to create your own custom package</p>
+        <div id="second">
+
+        <div class="col-md-10" id="">
+            <label for="validationServer01" class="form-label">Name</label>
+            <input type="text" class="form-control is-valid w-100" id="validationServer01" value="" required>
+            <div class="valid-feedback">
+              Please write your name
+            </div>
+          </div>
+          <div class="col-md-10" id="">
+            <label for="validationServer02" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control is-valid" id="validationServer02" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-10" id="">
+            <label for="validationServerUsername" class="form-label">Email-address</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend3">@</span>
+              <input type="email" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+              <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                Please write your email
+              </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationServer03" class="form-label">How many are attendding</label>
+                <input type="number" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                  Please choose Numberof people attendding
+                </div>
+              </div>
+<!--  -->
+            <div class="btn-group mt-5">
+                <button class="btn bg-warning rounded btn-white" onclick="next('second')">   Next</button>
+            </div>
+            <!--  -->
+          </div>
+
+        </div>
+         
+          
+
+        <div id="third">
+          <div class="col-12 mb-3" id="">
+            <p class="pt-3">Personalised tshirts are avalaible</p>
+            <div class="form-check">
+              <input class="form-check-input is-valid" type="radio" value="" name="flexRadioDefault" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+              <label class="form-check-label" for="invalidCheck3">
+                Yes, t-shirt
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12" id="">
+            <div class="form-check">
+              <input class="form-check-input is-valid" type="radio" value="" name="flexRadioDefault" id="invalidCheck4" aria-describedby="invalidCheck3Feedback" required>
+              <label class="form-check-label" for="invalidCheck4">
+                No, thank you
+              </label>
+ 
+            </div>
+            
+
+          </div>
+
+
+         
+          <div class="col-12 mb-3" id="">
+            <p class="pt-3">we like to join TGW Group</p>
+            <div class="form-check">
+              <input class="form-check-input is-valid" type="radio" value="" name="flexRadioDefault2" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+              <label class="form-check-label" for="invalidCheck3">
+                Yes, (saturdays only 10am-6pm)
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12" id="">
+            <div class="form-check">
+              <input class="form-check-input is-valid" type="radio" value="" name="flexRadioDefault2" id="invalidCheck4" aria-describedby="invalidCheck3Feedback" required>
+              <label class="form-check-label" for="invalidCheck4">
+                No, thank you
+              </label>
+            </div>
+          </div>
+
+
+
+
+         
+          <div class="col-12 mb-3" id="">
+            <p class="pt-3">TGW cap</p>
+            <div class="form-check">
+              <input class="form-check-input is-valid" type="radio" value="" name="flexRadioDefault3" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+              <label class="form-check-label" for="validCheck3">
+                Yes, $25ea
+              </label>
+            </div>
+ 
+          </div>
+
+
+          <div class="col-12" id="">
+            <div class="form-check">
+              <input class="form-check-input is-valid" type="radio" value="" name="flexRadioDefault3" id="invalidCheck4" aria-describedby="invalidCheck3Feedback" required>
+              <label class="form-check-label" for="validCheck4">
+                No, thank you
+              </label>
+            </div>
+          </div>
+
+
+             <!--  -->
+             <div class="btn-group mt-5">
+                <button class="btn bg-warning rounded btn-white mx-5" onclick="next('third')">Next</button>
+                <button class="btn bg-warning rounded btn-white" onclick="previous('third')">Back</button>
+            </div>
+            <!--  -->
+    </div>
+
+
+
+
+
+
+    <div id="fourth">
+
+    
+          <div class="col-12 mb-3" id="">
+            <p class="pt-3">TGW sports water bottle</p>
+            <div class="form-check">
+              <input class="form-check-input is-valid" type="radio" value="" name="flexRadioDefault4" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+              <label class="form-check-label" for="validCheck3">
+                Yes, $25ea
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12" id="">
+            <div class="form-check">
+              <input class="form-check-input is-valid" type="radio" value="" name="flexRadioDefault4" id="invalidCheck4" aria-describedby="invalidCheck3Feedback" required>
+              <label class="form-check-label" for="validCheck4">
+                No, thank you
+              </label>
+            </div>
+                      
+
+          </div>
+
+
+
+
+          <div class="col-md-6" id="">
+              <p class="fw-bold pt-3">Subtotal:</p>
+            <label for="validationServer03" class="form-label">OMU RESORT PACKAGE with round trip transportation</label>
+            <input type="text" class="form-control w-100" placeholder="40$" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+          </div>
+
+
+          <div class="col-md-6 pt-3" id="">
+              <p class="fw-bold pt-3">Total package without</p>
+            <label for="validationServer03" class="form-label">transportation</label>
+            <input type="text" class="form-control w-100" placeholder="40$" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+          </div>
+
+          <div class="col-md-6 pt-3" id="sixth">
+            <label for="validationServer03" class="form-label">Personalised T - shirt:</label>
+            <input type="text" class="form-control w-100" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+            
+          </div>
+
+      <!--  -->
+      <div class="btn-group mt-5">
+        <button class="btn bg-warning rounded btn-white mx-5" onclick="next('fourth')">Next</button>
+        <button class="btn bg-warning rounded btn-white" onclick="previous('fourth')">Back</button>
+    </div>
+    <!--  -->
+
+    </div>
+
+
+
+    <div id="fifth">
+
+    
+
+          <div class="col-md-6 pt-3" id="">
+            <label for="validationServer03" class="form-label">Personalised Cap:</label>
+            <input type="text" class="form-control w-100" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+            
+          </div>
+
+          <div class="col-md-6 pt-3" id="">
+            <label for="validationServer03" class="form-label">Sports water bottle:</label>
+            <input type="text" class="form-control w-100 " id="validationServer03" aria-describedby="validationServer03Feedback" required>
+            
+          </div>
+          <div class="col-md-6 pt-3" id="">
+            <label for="validationServer03" class="form-label fw-bold">Total</label>
+            <input type="text" class="form-control w-100 " id="validationServer03" aria-describedby="validationServer03Feedback" required>
+           <!--  -->
+<div class="btn-group mt-5">
+    <button class="btn bg-warning rounded btn-white mx-5" ><a href="" style="text-decoration: none; color: rgb(0, 0, 0);">Finish</a></button>
+    <button class="btn bg-warning rounded btn-white" onclick="previous('fifth')">Back</button>
+</div>
+<!--  -->
+          </div>
+    </div>
+
+    </div>
+</div>
+    </main>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./script.js"></script>
+</body>
+</html>
